@@ -5,7 +5,7 @@ CLS
 #Write-Host "Disconnecting from vCenters"
 #Disconnect-VIServer -Server * -Force -Confirm:$false
 
-$vmlist = Import-Csv -Path 'C:\users\thom\Documents\autodeploy\autodeploy.csv'
+$vmlist = Import-Csv -Path 'D:\scripts\autodeploy\autodeploy.csv'
 
 
 foreach ($vm in $vmlist){
